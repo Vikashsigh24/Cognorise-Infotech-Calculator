@@ -178,17 +178,33 @@ button:active {
         display: none;
     }
 
+    .center h3{
+        font-size: 3vw;
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width:1350px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .hints {
-        text-align: center;
-        margin: 100px auto;
+        width: 25%;
+        margin-left: 0;
+        text-wrap: balance;
+        font-size: 2vw;
     }
 
     .calculator {
-        margin-top: 0;
-        margin-bottom: 150px;
-        transform: scale(1.3);
+        width: 50%;
+        height: auto;
+        margin-top: -250px;
+        margin-bottom: 80px;
+
     }
+
+    .center h3{
+        font-size: 1.8vw;
+    }
+
 }
