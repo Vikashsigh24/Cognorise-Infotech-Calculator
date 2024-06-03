@@ -12,17 +12,7 @@ body {
     margin: 20px 20px;
 }
 
-.center {
-    text-align: center;
-    color: #045269;
-}
 
-.hints {
-    font-size: 20px;
-    color: white;
-    margin-left: 200px;
-    margin-top: 100px;
-}
 
 
 .calculator {
@@ -50,7 +40,6 @@ body {
     padding: 20px;
     margin: -20px;
     margin-bottom: 10px;
-
     overflow-x: hidden;
     width: 100%;
     font-size: 50px;
@@ -130,38 +119,75 @@ button:active {
     background-color: #ca8a24;
 }
 
-@media screen and (max-width: 425px) {
 
-    body{
+.center {
+    text-align: center;
+    color: #045269;
+    width: 100%;
+}
+
+.hints {
+    font-size: 20px;
+    color: white;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
         overflow: hidden;
     }
-    .display{
-        height: 100px;
-        width: 100%;
-        font-size: 40px;
-    }
-    .calculator{
+
+    .calculator {
         margin-top: 5px;
         margin-bottom: 20px;
         width: 80%;
         height: 500px;
+        border-top-left-radius: 35px;
+        border-bottom-right-radius: 35px;
     }
-    button{
+
+    .display {
+        height: 100px;
+        width: 100%;
+        font-size: 40px;
+        border-top-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+
+    button {
         padding: 10px 15px;
         border-top-left-radius: 15px;
         border-bottom-right-radius: 15px;
-        
+        width: 100%;
+        height: 100%;
+
     }
-    .buttons{
+
+    .buttons {
         margin-left: -10px;
     }
 
-    .center h3{
+
+    .center h3 {
         font-size: 8px;
     }
-    
+
     .hints {
         display: none;
     }
 
+}
+
+@media screen and (min-width: 769px) and (max-width:1350px) {
+    .hints {
+        text-align: center;
+        margin: 0;
+    }
+
+    .calculator {
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
 }
