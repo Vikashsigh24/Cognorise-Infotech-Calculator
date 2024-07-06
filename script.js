@@ -9,7 +9,7 @@ function InsertValue(value){
     }else{
         display.textContent += value;
     }
-
+ 
 }
 
 function calculation(){
